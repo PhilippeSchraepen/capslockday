@@ -1,0 +1,35 @@
+# general excludes
+.tmp/
+tmp/
+temp/
+logs/*
+!.gitkeep
+bower_components/*
+node_modules/*
+dist
+
+# Windows generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# MacOSx generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+#Local caches
+.sass-cache/*
+
+#Application
+/app/bower_components/*
+style.css.map
+style.css
+npm-debug.log
+.tmp
+test/coverage
+test/karma_html
+.idea
+app/app.config.js

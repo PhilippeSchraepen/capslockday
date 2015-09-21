@@ -1,0 +1,32 @@
+{
+  "name": "capslockday",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack-dev-server --inline --hot --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhillSlevin/capslockday.git"
+  },
+  "author": "PhillSlevin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PhillSlevin/capslockday/issues"
+  },
+  "homepage": "https://github.com/PhillSlevin/capslockday#readme",
+  "devDependencies": {
+    "file-loader": "^0.8.4",
+    "image-webpack-loader": "^1.6.1",
+    "imagemin": "^3.2.0",
+    "jshint": "^2.8.0",
+    "jshint-loader": "^0.8.3",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.11.0"
+  },
+  "dependencies": {
+    "normalize.css": "^3.0.3"
+  }
+}
