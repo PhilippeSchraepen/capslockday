@@ -1,2 +1,2 @@
-// require('./../../node_modules/normalize.css/normalize.css')
+require('../style/normalize.css');
 require('../style/style.scss');
