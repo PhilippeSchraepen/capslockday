@@ -24,14 +24,14 @@
 
 .title {
   position: relative;
-  top: 20px;
+  top: 100px;
   right: 20px;
   text-align: right;
   width: 100%;
 
   .mainTitle{
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 6em;
+    font-size: 4em;
     font-style: normal;
     font-variant: normal;
     font-weight: 500;
@@ -40,17 +40,18 @@
 
   .subTitle{
     font-family: Georgia, Times, 'Times New Roman', serif;
-    font-size: 3em;
+    font-size: 2em;
     font-style: normal;
     font-variant: normal;
-    font-weight: 500;
     color: white;
   }
 }
 
 .date{
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
   position: relative;
-  top: 50px;
+  top: 120px;
   right: 20px;
   font-size: 2em;
   color: white;
@@ -58,8 +59,40 @@
 }
 
 .actionButton {
-  position: relative;
-  top: 200px;
+  white-space: normal !important;
   -webkit-user-drag: auto !important;
+
+  text-align:center;
+  line-height:300px;
+  height:300px;
+
+  display: block;
+  position:fixed;
+  bottom:0;
+  width: 100%;
+}
+
+.hidden{
+  display: none;
+}
+
+@media screen and (min-width: 48em){
+  .actionButton {
+    height: auto;
+    position: relative;
+    top: 200px;
+  }
+}
+@media screen and (min-width: 64em){
+  .actionButton{
+    line-height: normal;
+    height: auto;
+  }
+  .title > .mainTitle {
+    font-size: 4em;
+  }
+  .title > .subTitle {
+    font-size: 2em;
+  }
 }
 
