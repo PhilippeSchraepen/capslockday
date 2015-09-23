@@ -1,6 +1,8 @@
 var webpack = require('webpack');
 var WebpackDevServer = require('webpack-dev-server');
 var config = require('./webpack.config');
+var env = require('./server/env');
+
 new WebpackDevServer(webpack(config),{
   publicPath: config.output.publicPath,
   hot: true,
@@ -8,10 +10,11 @@ new WebpackDevServer(webpack(config),{
     colors: true
   },
   historyApiFallback: true
-}).listen(8080, 'localhost', function(err, result){
+}).listen(env.API_PORT, env.API_URL, function(err, result){
   if (err){
     console.log(err);
     return;
   }
-  console.log('Listening at localhost:8080');
+  console.log('Environment: ' + env.NODE_ENV);
+  console.log('Listening at ' + env.API_URL + ':' + env.API_PORT);
 })
