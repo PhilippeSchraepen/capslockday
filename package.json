@@ -26,5 +26,7 @@
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.11.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "compression-webpack-plugin": "^0.2.0"
+  }
 }
