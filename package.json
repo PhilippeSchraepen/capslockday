@@ -2,9 +2,12 @@
   "name": "capslockday",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "4.1.1"
+  },
   "main": "index.js",
   "scripts": {
-    "start": "webpack -p --config webpack.production.config.js"
+    "start": "webpack --config webpack.production.config.js"
   },
   "repository": {
     "type": "git",
