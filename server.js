@@ -1,10 +1,10 @@
 var webpack = require('webpack');
 var WebpackDevServer = require('webpack-dev-server');
-var config = require('./webpack.config');
 var env = require('./server/env');
+var devConfig = require('./webpack.config');
 
-new WebpackDevServer(webpack(config),{
-  publicPath: config.output.publicPath,
+new WebpackDevServer(webpack(devConfig),{
+  publicPath: './static/',
   hot: true,
   stats: {
     colors: true
