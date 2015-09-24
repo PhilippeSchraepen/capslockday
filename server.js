@@ -31,5 +31,6 @@ if (!isProduction){
   app.listen(env.API_PORT, function () {
     console.log('Environment: ' + env.NODE_ENV);
     console.log('Listening at ' + env.API_URL + ':' + env.API_PORT);
+
   });
 }
