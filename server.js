@@ -1,10 +1,12 @@
 var webpack = require('webpack');
+var path = require('path');
 var WebpackDevServer = require('webpack-dev-server');
 var env = require('./server/env');
 var devConfig = require('./webpack.config');
 var express = require('express');
 var app = express();
 var isProduction = env.NODE_ENV === 'production';
+// var buildPath = path.resolve(__dirname, 'static');
 
 if (!isProduction){
   new WebpackDevServer(webpack(devConfig),{

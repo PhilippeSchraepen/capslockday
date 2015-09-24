@@ -2,9 +2,11 @@ var webpack = require('webpack');
 var path = require('path');
 // var nodeModulesPath = path.resolve(__dirname, 'node_modules');
 // var mainPath = path.resolve(__dirname, 'app', 'main.js');
-var buildPath = path.resolve(__dirname, './static');
-var stylePath = path.resolve(__dirname, 'src/style');
-var imgPath = path.resolve(__dirname, 'src/img');
+var buildPath = path.resolve(__dirname, 'static/');
+var stylePath = path.resolve(__dirname, 'src/style/');
+var imgPath = path.resolve(__dirname, 'src/img/');
+
+console.log('buildPath' + buildPath)
 
 module.exports = {
   // We change to normal source mapping
@@ -12,6 +14,7 @@ module.exports = {
   entry: './src/scripts/entry',
   output: {
     path: buildPath,
+    publicPath: '/static/',
     filename: 'bundle.js',
   },
   module: {
