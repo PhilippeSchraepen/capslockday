@@ -5,9 +5,10 @@
   "engines": {
     "node": "4.1.1"
   },
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "webpack --config webpack.production.config.js"
+    "start": "webpack --config webpack.production.config.js",
+    "postinstall": "node deploy"
   },
   "repository": {
     "type": "git",
