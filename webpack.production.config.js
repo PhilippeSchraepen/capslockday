@@ -1,8 +1,5 @@
 var webpack = require('webpack');
 var path = require('path');
-// var nodeModulesPath = path.resolve(__dirname, 'node_modules');
-// var mainPath = path.resolve(__dirname, 'app', 'main.js');
-var buildPath = path.resolve(__dirname, 'static');
 var stylePath = path.resolve(__dirname, 'src', 'style');
 var imgPath = path.resolve(__dirname, 'src', 'img');
 

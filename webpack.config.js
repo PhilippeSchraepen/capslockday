@@ -3,7 +3,6 @@ var webpack = require('webpack');
 var CompressionPlugin = require("compression-webpack-plugin");
 var buildPath = path.resolve(__dirname, 'static');
 
-
 module.exports = {
     entry: [
       'webpack-dev-server/client?http://localhost:8888',
