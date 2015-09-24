@@ -7,7 +7,7 @@
   },
   "main": "server.js",
   "scripts": {
-    "start": "webpack --config webpack.production.config.js",
+    "start": "node server",
     "postinstall": "node deploy"
   },
   "repository": {
