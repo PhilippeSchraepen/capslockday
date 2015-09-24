@@ -12,7 +12,6 @@ module.exports = {
   entry: './src/scripts/entry',
   output: {
     path: buildPath,
-    publicPath: './static/',
     filename: 'bundle.js',
   },
   module: {
