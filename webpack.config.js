@@ -1,6 +1,8 @@
 var path = require('path');
 var webpack = require('webpack');
 var CompressionPlugin = require("compression-webpack-plugin");
+var buildPath = path.resolve(__dirname, 'static');
+
 
 module.exports = {
     entry: [
@@ -9,9 +11,9 @@ module.exports = {
       './src/scripts/entry'
     ],
     output: {
-      path: __dirname,
+      path: buildPath,
+      publicPath: '/static/',
       filename: "bundle.js",
-      publicPath: '/static/'
     },
     module: {
       preLoaders: [

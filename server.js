@@ -6,11 +6,12 @@ var devConfig = require('./webpack.config');
 var express = require('express');
 var app = express();
 var isProduction = env.NODE_ENV === 'production';
-// var buildPath = path.resolve(__dirname, 'static');
+var buildPath = path.resolve(__dirname, 'static');
 
 if (!isProduction){
   new WebpackDevServer(webpack(devConfig),{
-    publicPath: './static/',
+    path: buildPath,
+    publicPath: '/static/',
     hot: true,
     stats: {
       colors: true
