@@ -25,9 +25,9 @@ if (!isProduction){
 } else {
   // point to the static assets
   app.use(express.static(__dirname));
-  app.listen(env.API_PORT, function () {
+  app.listen(env.HEROKU_PORT), function () {
     console.log('Environment: ' + env.NODE_ENV);
-    console.log('Listening at ' + env.API_URL + ':' + env.API_PORT);
+    console.log('Listening at ' + env.API_PORT);
 
   });
 }
