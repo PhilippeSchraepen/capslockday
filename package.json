@@ -1,11 +1,11 @@
 {
   "name": "capslockday",
   "version": "1.0.0",
-  "description": "",
+  "description": "A satire app",
   "engines": {
     "node": "0.11.x"
   },
-  "main": "server.js",
+  "main": "bundle.js",
   "scripts": {
     "start": "node server",
     "postinstall": "node deploy"
